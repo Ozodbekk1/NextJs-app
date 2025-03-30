@@ -9,6 +9,7 @@ const Hero = () => {
       {data.map((item) => (
         <div key={item.title} className="relative flex flex-col items-start w-full py-4 " >
           <Image
+            quality={100}
             src={item.image}
             alt={item.title}
             width={1000}
