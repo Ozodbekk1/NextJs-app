@@ -13,17 +13,18 @@ const Sidebar = () => {
         {data.map((item) => (
           <Fragment key={item.title}>
           <div
-            className="flex flex-col md:flex-row items-center gap-2 p-4 rounded-lg "
+            className="relative flex-col md:flex-row md:items-center  gap-2 p-4 rounded-lg "
           >
             <Image
               quality={100}
-              width={200}
+              width={500}
               height={200}
+              objectFit="cover"
               src={item.image}
               alt={item.title}
-              className="rounded-lg"
+              className="rounded-lg flex justify-center"
             />
-            <div className="flex flex-col items-start justify-center">
+            <div className="flex flex-col items-start justify-center pt-2">
               <h2 className="text-xl">{item.title}</h2>
               <div className="flex items-center">
                 <Image
